@@ -214,57 +214,47 @@
 									placeholder="ປ້ອນທີ່ຢູ່ຂອງເຈົ້າ"
 								/>
 							</div>
+							<div class="col-12">
+								<label for="address" class="form-label">ເບີໂທລະສັບ</label>
+								<input
+									type="text"
+									class="form-control"
+									id="PhoneNuber"
+									placeholder= "ປ້ອນເບີໂທລະສັບຂອງເຈົ້າ";
+								/>
+							</div>
 						</div>
 
 						<div class="row g-3">
 							<div class="col-12">
-								<label for="payment-method" class="form-label"
-									>ວິທີການຊຳລະ</label
-								>
+								<label for="payment-method" class="form-label">ວິທີການຊຳລະ</label>
 								<select class="form-select" id="payment-method">
 									<option value="credit-card">ບັດເຄດິດ/ບັດເດບິດ</option>
 									<option value="bank-transfer">ໂອນເງິນຜ່ານທະນາຄານ</option>
 								</select>
 							</div>
-							<div class="col-12">
+							<div id="credit-card-details" class="col-12">
 								<label for="card-number" class="form-label">ເລກບັດເຄດິດ</label>
-								<input
-									type="text"
-									class="form-control"
-									id="card-number"
-									placeholder="XXXX-XXXX-XXXX-XXXX"
-								/>
+								<input type="text" class="form-control" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"/>
+								<div class="col-md-4">
+									<label for="expiry-month" class="form-label">ວັນໝົດອາຍຸ (ເດືອນ)</label>
+									<input type="text" class="form-control" id="expiry-month" placeholder="MM"/>
+								</div>
+								<div class="col-md-4">
+									<label for="expiry-year" class="form-label">ວັນໝົດອາຍຸ (ປີ)</label>
+									<input type="text" class="form-control" id="expiry-year" placeholder="YYYY"/>
+								</div>
+								<div class="col-md-4">
+									<label for="cvv" class="form-label">ລະຫັດ CVV</label>
+									<input type="text" class="form-control" id="cvv" placeholder="XXX"/>
+								</div>
 							</div>
-							<div class="col-md-4">
-								<label for="expiry-month" class="form-label"
-									>ວັນໝົດອາຍຸ (ເດືອນ)</label
-								>
-								<input
-									type="text"
-									class="form-control"
-									id="expiry-month"
-									placeholder="MM"
-								/>
-							</div>
-							<div class="col-md-4">
-								<label for="expiry-year" class="form-label"
-									>ວັນໝົດອາຍຸ (ປີ)</label
-								>
-								<input
-									type="text"
-									class="form-control"
-									id="expiry-year"
-									placeholder="YYYY"
-								/>
-							</div>
-							<div class="col-md-4">
-								<label for="cvv" class="form-label">ລະຫັດ CVV</label>
-								<input
-									type="text"
-									class="form-control"
-									id="cvv"
-									placeholder="XXX"
-								/>
+							<div id="bank-transfer-details" class="col-12" style="display: none;">
+								<!-- Display bank transfer details here -->
+								<p>Bank Account: 091-0000-1001-876</p>
+								<p>
+									<img class="img-2" src="img/bank.png" alt="">
+								</p>
 							</div>
 						</div>
 
