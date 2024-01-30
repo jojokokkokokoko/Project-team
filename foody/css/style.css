@@ -251,6 +251,9 @@
 	position: relative;
 	z-index: 2;
 }
+.about-img {
+	display: flex;
+}
 
 .about-img::before {
 	position: absolute;
@@ -342,7 +345,7 @@
 }
 
 .img-2 {
-	width: 70%;
+	width: 60%;
 	height: 15vw;
 }
 /*** Testimonial ***/

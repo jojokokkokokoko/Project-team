@@ -1,3 +1,4 @@
+//ວິທີສຳລະສິນຄ້າ
 $(document).ready(function () {
 	// Show/hide sections based on selected payment method
 	$("#payment-method").change(function () {
